@@ -21,7 +21,7 @@ bool backface  = true;
 bool centralized = false;
 vector<PlyModel> models;
 vector<string> files;
-glcTexture *textureManager;
+glcTexture *textureManager = new glcTexture();
 string file;
 int distOrigem = 180, obj = 0;
 

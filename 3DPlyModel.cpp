@@ -1,9 +1,10 @@
+#include "3DPlyModel.h"
+
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <GL/glut.h>
 
-#include "3DPlyModel.h"
 #define MAX(a, b) ((a) > (b) ? (a) : (b)) 
 
 using namespace std;

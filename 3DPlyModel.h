@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <string>
+#include <GL/glut.h>
 #include "Point.h"
 
 enum  DrawMode {WIREFRAME = 0, FLAT_SURFACE = 1};

@@ -14,6 +14,8 @@
 #define _GLC_TEXTURE_H
 
 #include <string>
+#include "GL/glut.h"
+
 
 class glcTexture
 {
@@ -35,11 +37,11 @@ class glcTexture
 	protected:
       GLuint *textureID;
       float  *aspectRatio;
-      int    numberOfTextures;
-      int    wrapMode;
-      int    minMode;
-      int    magMode;
-      int    colorMode;
+      int    numberOfTextures = 1;
+      int    wrapMode = GL_REPEAT;
+      int    minMode = GL_LINEAR;
+      int    magMode = GL_LINEAR;
+      int    colorMode = GL_MODULATE;
       GLfloat env_color[4];
       void CreateTextureFromPNG(std::string nome, int id);
 
